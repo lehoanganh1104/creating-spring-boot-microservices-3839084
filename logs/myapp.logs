@@ -1,0 +1,213 @@
+2025-06-24T19:23:11.028+07:00  INFO 15276 --- [main] c.e.e.ExplorecaliJpaApplication          : Starting ExplorecaliJpaApplication using Java 21.0.7 with PID 15276 (E:\Hoc\BackEnd\Spring boot\creating-spring-boot-microservices-3839084\explorecali-jpa\target\classes started by Admin in E:\Hoc\BackEnd\Spring boot\creating-spring-boot-microservices-3839084)
+2025-06-24T19:23:11.030+07:00 DEBUG 15276 --- [main] c.e.e.ExplorecaliJpaApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-06-24T19:23:11.031+07:00  INFO 15276 --- [main] c.e.e.ExplorecaliJpaApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T19:23:12.830+07:00  INFO 15276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-24T19:23:12.904+07:00  INFO 15276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2025-06-24T19:23:14.059+07:00  INFO 15276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-24T19:23:14.076+07:00  INFO 15276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-24T19:23:14.077+07:00  INFO 15276 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-06-24T19:23:14.172+07:00  INFO 15276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-24T19:23:14.173+07:00  INFO 15276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3062 ms
+2025-06-24T19:23:14.617+07:00  INFO 15276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-24T19:23:14.878+07:00  INFO 15276 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:d16afc9e-fd05-4e22-8c0a-23e1602b05fc user=SA
+2025-06-24T19:23:14.880+07:00  INFO 15276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-24T19:23:14.952+07:00  INFO 15276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T19:23:15.024+07:00  INFO 15276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24T19:23:15.066+07:00  INFO 15276 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T19:23:15.509+07:00  INFO 15276 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-24T19:23:16.712+07:00  INFO 15276 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T19:23:16.772+07:00  INFO 15276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T19:23:17.667+07:00  WARN 15276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-24T19:23:19.467+07:00  INFO 15276 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-24T19:23:19.547+07:00  INFO 15276 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-24T19:23:19.550+07:00  INFO 15276 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-24T19:23:19.555+07:00  INFO 15276 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-24T19:23:19.703+07:00  INFO 15276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-24T19:23:19.719+07:00  INFO 15276 --- [main] c.e.e.ExplorecaliJpaApplication          : Started ExplorecaliJpaApplication in 9.153 seconds (process running for 10.258)
+2025-06-24T19:23:19.820+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package BC:Backpack Cal
+2025-06-24T19:23:20.105+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package CC:California Calm
+2025-06-24T19:23:20.138+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package CH:California Hot springs
+2025-06-24T19:23:20.147+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package CY:Cycle California
+2025-06-24T19:23:20.152+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package DS:From Desert to Sea
+2025-06-24T19:23:20.156+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package KC:Kids California
+2025-06-24T19:23:20.161+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package NW:Nature Watch
+2025-06-24T19:23:20.169+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package SC:Snowboard Cali
+2025-06-24T19:23:20.176+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Create tour package TC:Taste of California
+2025-06-24T19:23:20.185+07:00  INFO 15276 --- [main] c.e.e.business.TourPackageService        : Get total tour package
+2025-06-24T19:23:20.573+07:00  INFO 15276 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-24T19:23:20.592+07:00 ERROR 15276 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.lambda$callRunner$6(SpringApplication.java:797)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:66)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.example.explorecalijpa.ExplorecaliJpaApplication.main(ExplorecaliJpaApplication.java:32)
+Caused by: java.io.IOException: File not found: ExploreCalifornia.json
+	at com.example.explorecalijpa.ExplorecaliJpaApplication$TourFromFile.read(ExplorecaliJpaApplication.java:102)
+	at com.example.explorecalijpa.ExplorecaliJpaApplication.createToursFromFile(ExplorecaliJpaApplication.java:79)
+	at com.example.explorecalijpa.ExplorecaliJpaApplication.run(ExplorecaliJpaApplication.java:39)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	... 17 common frames omitted
+
+2025-06-24T19:23:20.615+07:00  INFO 15276 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T19:23:20.627+07:00  INFO 15276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-24T19:23:20.630+07:00  INFO 15276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-24T19:23:51.868+07:00  INFO 4452 --- [main] c.e.e.ExplorecaliJpaApplication          : Starting ExplorecaliJpaApplication using Java 21.0.7 with PID 4452 (E:\Hoc\BackEnd\Spring boot\creating-spring-boot-microservices-3839084\explorecali-jpa\target\classes started by Admin in E:\Hoc\BackEnd\Spring boot\creating-spring-boot-microservices-3839084)
+2025-06-24T19:23:51.870+07:00 DEBUG 4452 --- [main] c.e.e.ExplorecaliJpaApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-06-24T19:23:51.872+07:00  INFO 4452 --- [main] c.e.e.ExplorecaliJpaApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T19:23:53.534+07:00  INFO 4452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-24T19:23:53.604+07:00  INFO 4452 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-06-24T19:23:54.874+07:00  INFO 4452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-24T19:23:54.892+07:00  INFO 4452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-24T19:23:54.893+07:00  INFO 4452 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-06-24T19:23:54.980+07:00  INFO 4452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-24T19:23:54.980+07:00  INFO 4452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3042 ms
+2025-06-24T19:23:55.378+07:00  INFO 4452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-24T19:23:55.617+07:00  INFO 4452 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:234f2ca0-35e7-4d94-aec3-0c1aae9672ae user=SA
+2025-06-24T19:23:55.620+07:00  INFO 4452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-24T19:23:55.684+07:00  INFO 4452 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T19:23:55.784+07:00  INFO 4452 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24T19:23:55.835+07:00  INFO 4452 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T19:23:56.208+07:00  INFO 4452 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-24T19:23:57.480+07:00  INFO 4452 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T19:23:57.534+07:00  INFO 4452 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T19:23:58.446+07:00  WARN 4452 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-24T19:24:00.376+07:00  INFO 4452 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-24T19:24:00.387+07:00  INFO 4452 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-24T19:24:00.388+07:00  INFO 4452 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-24T19:24:00.402+07:00  INFO 4452 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2025-06-24T19:24:00.573+07:00  INFO 4452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-24T19:24:00.580+07:00  INFO 4452 --- [main] c.e.e.ExplorecaliJpaApplication          : Started ExplorecaliJpaApplication in 9.209 seconds (process running for 10.318)
+2025-06-24T19:24:00.611+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package BC:Backpack Cal
+2025-06-24T19:24:00.851+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package CC:California Calm
+2025-06-24T19:24:00.855+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package CH:California Hot springs
+2025-06-24T19:24:00.860+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package CY:Cycle California
+2025-06-24T19:24:00.868+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package DS:From Desert to Sea
+2025-06-24T19:24:00.873+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package KC:Kids California
+2025-06-24T19:24:00.878+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package NW:Nature Watch
+2025-06-24T19:24:00.881+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package SC:Snowboard Cali
+2025-06-24T19:24:00.885+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Create tour package TC:Taste of California
+2025-06-24T19:24:00.890+07:00  INFO 4452 --- [main] c.e.e.business.TourPackageService        : Get total tour package
+2025-06-24T19:24:01.335+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Big Sur Retreat for package Backpack Cal
+2025-06-24T19:24:01.383+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour In the Steps of John Muir for package Backpack Cal
+2025-06-24T19:24:01.387+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour The Death Valley Survivor's Trek for package Backpack Cal
+2025-06-24T19:24:01.392+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour The Mt. Whitney Climbers Tour for package Backpack Cal
+2025-06-24T19:24:01.396+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Channel Islands Excursion for package Backpack Cal
+2025-06-24T19:24:01.400+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Day Spa Package for package California Calm
+2025-06-24T19:24:01.403+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Restoration Package for package California Calm
+2025-06-24T19:24:01.408+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Huntington website library and Pasadena Retreat Tour for package California Calm
+2025-06-24T19:24:01.412+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Avila Beach Hot springs for package California Hot springs
+2025-06-24T19:24:01.417+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Matilija Hot springs for package California Hot springs
+2025-06-24T19:24:01.420+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Paso Robles Artesian Spring for package California Hot springs
+2025-06-24T19:24:01.425+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Amgen Tour of California Special for package Cycle California
+2025-06-24T19:24:01.430+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Monterey to Santa Barbara Tour for package Cycle California
+2025-06-24T19:24:01.434+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Cycle California: My Way for package Cycle California
+2025-06-24T19:24:01.438+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour 2 Days Adrift the Salton Sea for package From Desert to Sea
+2025-06-24T19:24:01.443+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Mojave to Malibu for package From Desert to Sea
+2025-06-24T19:24:01.447+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Joshua Tree: Best of the West Tour for package From Desert to Sea
+2025-06-24T19:24:01.452+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Kids L.A. Tour for package Kids California
+2025-06-24T19:24:01.457+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Islands of the Blue Dolphins Tour for package Kids California
+2025-06-24T19:24:01.461+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Eco-Tour for package Kids California
+2025-06-24T19:24:01.466+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Endangered Species Expedition for package Nature Watch
+2025-06-24T19:24:01.469+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Fossil Tour for package Nature Watch
+2025-06-24T19:24:01.474+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Coastal Experience for package Nature Watch
+2025-06-24T19:24:01.478+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Mammoth Mountain Adventure for package Snowboard Cali
+2025-06-24T19:24:01.484+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Mountain High Lift-off for package Snowboard Cali
+2025-06-24T19:24:01.488+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Ski Lake Tahoe for package Snowboard Cali
+2025-06-24T19:24:01.492+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Olive Garden Tour for package Taste of California
+2025-06-24T19:24:01.497+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Oranges & Apples Tour for package Taste of California
+2025-06-24T19:24:01.502+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Hot Salsa Tour for package Taste of California
+2025-06-24T19:24:01.507+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Create tour A Week of Wine for package Taste of California
+2025-06-24T19:24:01.511+07:00  INFO 4452 --- [main] c.e.explorecalijpa.business.TourService  : Get total tours
+2025-06-24T19:24:16.880+07:00  INFO 4452 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T19:24:16.893+07:00  INFO 4452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-24T19:24:16.901+07:00  INFO 4452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-24T19:24:38.251+07:00  INFO 5388 --- [main] c.e.e.ExplorecaliJpaApplication          : Starting ExplorecaliJpaApplication using Java 21.0.7 with PID 5388 (E:\Hoc\BackEnd\Spring boot\creating-spring-boot-microservices-3839084\explorecali-jpa\target\classes started by Admin in E:\Hoc\BackEnd\Spring boot\creating-spring-boot-microservices-3839084)
+2025-06-24T19:24:38.253+07:00 DEBUG 5388 --- [main] c.e.e.ExplorecaliJpaApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2025-06-24T19:24:38.254+07:00  INFO 5388 --- [main] c.e.e.ExplorecaliJpaApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T19:24:40.034+07:00  INFO 5388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-24T19:24:40.112+07:00  INFO 5388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2025-06-24T19:24:41.300+07:00  INFO 5388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-24T19:24:41.316+07:00  INFO 5388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-24T19:24:41.317+07:00  INFO 5388 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-06-24T19:24:41.405+07:00  INFO 5388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-24T19:24:41.406+07:00  INFO 5388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3070 ms
+2025-06-24T19:24:41.809+07:00  INFO 5388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-24T19:24:42.037+07:00  INFO 5388 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0d5016fd-d6e6-4cab-83c8-0572474f4879 user=SA
+2025-06-24T19:24:42.041+07:00  INFO 5388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-24T19:24:42.101+07:00  INFO 5388 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T19:24:42.176+07:00  INFO 5388 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-24T19:24:42.231+07:00  INFO 5388 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T19:24:42.577+07:00  INFO 5388 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-24T19:24:43.878+07:00  INFO 5388 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T19:24:43.935+07:00  INFO 5388 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T19:24:44.865+07:00  WARN 5388 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-24T19:24:46.587+07:00  INFO 5388 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-06-24T19:24:46.657+07:00  INFO 5388 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-24T19:24:46.658+07:00  INFO 5388 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-24T19:24:46.661+07:00  INFO 5388 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-24T19:24:46.737+07:00  INFO 5388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-06-24T19:24:46.747+07:00  INFO 5388 --- [main] c.e.e.ExplorecaliJpaApplication          : Started ExplorecaliJpaApplication in 8.979 seconds (process running for 10.063)
+2025-06-24T19:24:46.780+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package BC:Backpack Cal
+2025-06-24T19:24:47.103+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package CC:California Calm
+2025-06-24T19:24:47.107+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package CH:California Hot springs
+2025-06-24T19:24:47.112+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package CY:Cycle California
+2025-06-24T19:24:47.120+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package DS:From Desert to Sea
+2025-06-24T19:24:47.200+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package KC:Kids California
+2025-06-24T19:24:47.204+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package NW:Nature Watch
+2025-06-24T19:24:47.207+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package SC:Snowboard Cali
+2025-06-24T19:24:47.212+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Create tour package TC:Taste of California
+2025-06-24T19:24:47.225+07:00  INFO 5388 --- [main] c.e.e.business.TourPackageService        : Get total tour package
+2025-06-24T19:24:47.665+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Big Sur Retreat for package Backpack Cal
+2025-06-24T19:24:47.735+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour In the Steps of John Muir for package Backpack Cal
+2025-06-24T19:24:47.739+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour The Death Valley Survivor's Trek for package Backpack Cal
+2025-06-24T19:24:47.748+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour The Mt. Whitney Climbers Tour for package Backpack Cal
+2025-06-24T19:24:47.755+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Channel Islands Excursion for package Backpack Cal
+2025-06-24T19:24:47.761+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Day Spa Package for package California Calm
+2025-06-24T19:24:47.766+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Restoration Package for package California Calm
+2025-06-24T19:24:47.771+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Huntington website library and Pasadena Retreat Tour for package California Calm
+2025-06-24T19:24:47.777+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Avila Beach Hot springs for package California Hot springs
+2025-06-24T19:24:47.782+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Matilija Hot springs for package California Hot springs
+2025-06-24T19:24:47.787+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Paso Robles Artesian Spring for package California Hot springs
+2025-06-24T19:24:47.794+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Amgen Tour of California Special for package Cycle California
+2025-06-24T19:24:47.804+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Monterey to Santa Barbara Tour for package Cycle California
+2025-06-24T19:24:47.810+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Cycle California: My Way for package Cycle California
+2025-06-24T19:24:47.816+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour 2 Days Adrift the Salton Sea for package From Desert to Sea
+2025-06-24T19:24:47.822+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Mojave to Malibu for package From Desert to Sea
+2025-06-24T19:24:47.828+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Joshua Tree: Best of the West Tour for package From Desert to Sea
+2025-06-24T19:24:47.833+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Kids L.A. Tour for package Kids California
+2025-06-24T19:24:47.837+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Islands of the Blue Dolphins Tour for package Kids California
+2025-06-24T19:24:47.842+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Eco-Tour for package Kids California
+2025-06-24T19:24:47.847+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Endangered Species Expedition for package Nature Watch
+2025-06-24T19:24:47.851+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Fossil Tour for package Nature Watch
+2025-06-24T19:24:47.854+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Coastal Experience for package Nature Watch
+2025-06-24T19:24:47.861+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Mammoth Mountain Adventure for package Snowboard Cali
+2025-06-24T19:24:47.865+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Mountain High Lift-off for package Snowboard Cali
+2025-06-24T19:24:47.869+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Ski Lake Tahoe for package Snowboard Cali
+2025-06-24T19:24:47.874+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Olive Garden Tour for package Taste of California
+2025-06-24T19:24:47.880+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Oranges & Apples Tour for package Taste of California
+2025-06-24T19:24:47.885+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour Hot Salsa Tour for package Taste of California
+2025-06-24T19:24:47.888+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Create tour A Week of Wine for package Taste of California
+2025-06-24T19:24:47.893+07:00  INFO 5388 --- [main] c.e.explorecalijpa.business.TourService  : Get total tours
+2025-06-24T20:06:12.516+07:00  INFO 5388 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T20:06:12.527+07:00  INFO 5388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-24T20:06:12.532+07:00  INFO 5388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
