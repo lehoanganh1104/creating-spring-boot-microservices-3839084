@@ -47,7 +47,8 @@ public class TourRatingService {
    * @throws NoSuchElementException if no Tour found.
    * @return created entity
    */
-  public TourRating createNew(int tourId, Integer customerId, Integer score, String comment) throws NoSuchElementException {
+  public TourRating createNew(int tourId, Integer customerId, Integer score, String comment)
+      throws NoSuchElementException {
     return tourRatingRepository.save(new TourRating(verifyTour(tourId), customerId,
         score, comment));
   }
@@ -113,7 +114,7 @@ public class TourRatingService {
   public TourRating updateSome(int tourId, Integer customerId, Optional<Integer> score, Optional<String> comment)
       throws NoSuchElementException {
     TourRating rating = verifyTourRating(tourId, customerId);
-    score.ifPresent(s ->rating.setScore(s));
+    score.ifPresent(s -> rating.setScore(s));
     comment.ifPresent(c -> rating.setComment(c));
     return tourRatingRepository.save(rating);
   }
@@ -150,7 +151,7 @@ public class TourRatingService {
    * @param score
    * @param customers
    */
-  public void rateMany(int tourId,  int score, List<Integer> customers) {
+  public void rateMany(int tourId, int score, List<Integer> customers) {
     Tour tour = verifyTour(tourId);
     for (Integer c : customers) {
       if (tourRatingRepository.findByTourIdAndCustomerId(tourId, c).isPresent()) {
@@ -159,6 +160,7 @@ public class TourRatingService {
       tourRatingRepository.save(new TourRating(tour, c, score));
     }
   }
+
   /**
    * Verify and return the Tour given a tourId.
    *
