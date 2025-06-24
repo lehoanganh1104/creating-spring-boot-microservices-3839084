@@ -47,7 +47,7 @@ public class TourRatingController {
   @ResponseStatus(HttpStatus.CREATED)
   public RatingDto createTourRating(@PathVariable(value = "tourId") int tourId,
       @RequestBody @Valid RatingDto ratingDto) {
-      TourRating rating = tourRatingService.createNew(tourId, ratingDto.getCustomerId(), 
+    TourRating rating = tourRatingService.createNew(tourId, ratingDto.getCustomerId(),
         ratingDto.getScore(), ratingDto.getComment());
     return new RatingDto(rating);
   }
@@ -78,8 +78,8 @@ public class TourRatingController {
    */
   @PutMapping
   public RatingDto updateWithPut(@PathVariable(value = "tourId") int tourId, @RequestBody @Valid RatingDto ratingDto) {
-      return new RatingDto(tourRatingService.update(tourId, ratingDto.getCustomerId(),
-                ratingDto.getScore(), ratingDto.getComment()));
+    return new RatingDto(tourRatingService.update(tourId, ratingDto.getCustomerId(),
+        ratingDto.getScore(), ratingDto.getComment()));
   }
 
   /**
