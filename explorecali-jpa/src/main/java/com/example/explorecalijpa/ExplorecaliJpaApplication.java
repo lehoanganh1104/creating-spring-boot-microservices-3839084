@@ -2,6 +2,7 @@ package com.example.explorecalijpa;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,7 @@ public class ExplorecaliJpaApplication implements CommandLineRunner {
         System.out.println("Persisted Packages = " + tourPackageService.total());
         createToursFromFile(TOUR_IMPORT_FILE);
         System.out.println("Persisted Tours = " + tourService.total());
-       
+
         /********* CHALLENGES **********/
         // System.out.println("\n\nEasy Tours");
         // tourService.lookupByDifficulty(Difficulty.Easy).forEach(System.out::println);
@@ -95,7 +96,12 @@ public class ExplorecaliJpaApplication implements CommandLineRunner {
             String blurb, Integer price, String length, String bullets,
             String keywords, String difficulty, String region) {
         static List<TourFromFile> read(String fileToImport) throws IOException {
-            return new ObjectMapper().readValue(new File(fileToImport),
+            InputStream inputStream = TourFromFile.class.getClassLoader()
+                    .getResourceAsStream(fileToImport);
+            if (inputStream == null) {
+                throw new IOException("File not found: " + fileToImport);
+            }
+            return new ObjectMapper().readValue(inputStream,
                     new TypeReference<List<TourFromFile>>() {
                     });
         }
